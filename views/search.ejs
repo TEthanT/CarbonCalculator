@@ -11,13 +11,9 @@
             <div class="app-name">Carbon Calculator</div>
         </a>
     </header>
-    <section class="food-search">
-        <div class="search-box">
-            <form id="search-form" method="POST" action="/search">
-                <input type="text" name="search" placeholder="Search for a food..." />
-                <input type="submit" value="submit" />
-            </form>
-        </div>
+    <section class="search-results">
+        <h1 name="food">Food: <%= data.name %></h1>
+        <p name="footprint">Carbon Footprint: <%= data.footprint %></p>
     </section>
 </body>
 </html>
