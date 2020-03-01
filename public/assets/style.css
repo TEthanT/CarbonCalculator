@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+
+.app-logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.25em;
+    color: green;
+    text-decoration: none;
+}
+
+.app-logo-name {
+    margin-left: 1em;
+}
+
+.search-box {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    border-radius: 20px;
+    background: #74b9ff;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.search-bar {
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-size: 16px;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    transition: 0.4s;
+}
+
+.search-button:hover {
+    color: black;
+}

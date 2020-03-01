@@ -10,17 +10,17 @@ const foods = [
     { id: 3, name: 'banana', footprint: '7'}
 ];
 
-router.post('/', urlencodedParser, function(req, res) {
+router.get('/', function(req, res) {
     const food = foods.find(function(c) {
-        return c.name === req.body.search;
+        return c.name === req.query.q;
     });
     if (food) {
         res.render('search', {data: food});
     } else {
-        res.sendFile('/pages/search_error.html', {
+        res.sendFile('/public/pages/search_error.html', {
             root: './'
         });
-    }
+    };
 });
 
 module.exports = router;
